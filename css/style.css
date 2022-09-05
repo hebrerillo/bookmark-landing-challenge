@@ -82,25 +82,26 @@ img, picture {
       display: none; }
   .main-header .navigation-menu--header {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 3;
     position: absolute;
     inset: 0;
     min-height: 100%;
     padding-top: 13rem;
     padding-left: var(--horizontal-padding-container, 2rem);
-    padding-right: var(--horizontal-padding-container, 2rem); }
+    padding-right: var(--horizontal-padding-container, 2rem);
+    padding-bottom: 5rem; }
     .main-header .navigation-menu--header::before {
       content: "";
       position: absolute;
       inset: 0;
       background-color: var(--dark-blue, #242A45);
       opacity: 0.95;
-      z-index: 1; }
+      z-index: -1; }
     .main-header .navigation-menu--header ul {
       display: flex;
-      flex-direction: column;
-      position: relative;
-      z-index: 1; }
+      flex-direction: column; }
       .main-header .navigation-menu--header ul li {
         padding: 3rem 0;
         border-top: var(--thin-grey-border);
@@ -116,6 +117,10 @@ img, picture {
           border-radius: 5px; }
           .main-header .navigation-menu--header ul li.login-link a .heading-4 {
             font-weight: 500; }
+    .main-header .navigation-menu--header .header-social-networks {
+      display: flex;
+      justify-content: center;
+      column-gap: 4rem; }
   .main-header #header-checkbox-buttons:checked ~ .header--logo path {
     fill: #ffffff; }
   .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
@@ -125,6 +130,6 @@ img, picture {
   .main-header #header-checkbox-buttons:checked ~ label .open-menu-icon {
     display: none; }
   .main-header #header-checkbox-buttons:checked ~ .navigation-menu--header {
-    display: block; }
+    display: flex; }
 
 /*# sourceMappingURL=style.css.map */
