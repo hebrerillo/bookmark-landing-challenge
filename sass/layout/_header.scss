@@ -30,7 +30,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background-color: var(--dark-blue);
+            background-color: var(--dark-blue, #242A45);
             opacity: 0.95;
             z-index: 1;
         }

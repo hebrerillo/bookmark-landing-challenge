@@ -37,8 +37,8 @@ img, picture {
     position: relative;
 
     .container {
-        padding-left: var(--horizontal-padding-container);
-        padding-right: var(--horizontal-padding-container);
+        padding-left: var(--horizontal-padding-container, 2rem);
+        padding-right: var(--horizontal-padding-container, 2rem);
     }
 }
 

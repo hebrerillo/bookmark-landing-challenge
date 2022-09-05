@@ -30,8 +30,8 @@ img, picture {
   min-height: 100vh;
   position: relative; }
   .main-container .container {
-    padding-left: var(--horizontal-padding-container);
-    padding-right: var(--horizontal-padding-container); }
+    padding-left: var(--horizontal-padding-container, 2rem);
+    padding-right: var(--horizontal-padding-container, 2rem); }
 
 @media only screen and (min-width: 90em) {
   :root {
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: var(--dark-blue);
+      background-color: var(--dark-blue, #242A45);
       opacity: 0.95;
       z-index: 1; }
   .main-header #header-checkbox-buttons:checked ~ .header--logo path {
