@@ -25,3 +25,14 @@ ul {
 a {
     text-decoration: none;
 }
+
+@media only screen and (min-width: $minWidthDesktop) {
+
+    :root {
+        --paragraph-maximum-width: 80rem;
+    }
+
+    html {
+        font-size: 62.5%; /*1 rem = 10px*/
+    }
+}
