@@ -48,5 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   .heading-2 {
     font-size: 4rem;
     letter-spacing: -0.1px; } }
+.main-header {
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
