@@ -107,8 +107,15 @@ img, picture {
         text-align: center; }
         .main-header .navigation-menu--header ul li .heading-4 {
           color: var(--color-white); }
-      .main-header .navigation-menu--header ul li:last-child {
-        border-bottom: var(--thin-grey-border); }
+      .main-header .navigation-menu--header ul li.login-link {
+        padding-bottom: 0; }
+        .main-header .navigation-menu--header ul li.login-link a {
+          display: block;
+          padding: 1.5rem 0;
+          border: 2px solid var(--color-white);
+          border-radius: 5px; }
+          .main-header .navigation-menu--header ul li.login-link a .heading-4 {
+            font-weight: 500; }
   .main-header #header-checkbox-buttons:checked ~ .header--logo path {
     fill: #ffffff; }
   .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
