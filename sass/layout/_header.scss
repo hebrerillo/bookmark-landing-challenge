@@ -1,3 +1,51 @@
 .main-header {
     display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+
+    .header--logo, label {
+        z-index: 4;
+    }
+    
+    #header-checkbox-buttons {
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+        .close-menu-icon {
+            display: none;
+        }
+    }
+
+    .navigation-menu--header {
+        display: none;
+        z-index: 3;
+        position: absolute;
+        inset: 0;
+        min-height: 100%;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--dark-blue);
+            opacity: 0.95;
+            z-index: 1;
+        }
+    }
+    
+    #header-checkbox-buttons:checked ~ label {
+        .close-menu-icon {
+            display: block;
+        }
+
+        .open-menu-icon {
+            display: none;
+        }
+    }
+
+    #header-checkbox-buttons:checked ~ .navigation-menu--header {
+        display: block;
+    }
 }

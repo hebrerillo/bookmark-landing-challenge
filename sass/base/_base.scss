@@ -1,5 +1,7 @@
 :root {
     --paragraph-maximum-width: 75rem;
+    --horizontal-padding-container: 4rem;
+    --dark-blue : #242A45;
 }
 
 html {
@@ -24,6 +26,20 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+img, picture {
+    display: block;
+}
+
+.main-container {
+    min-height: 100vh;
+    position: relative;
+
+    .container {
+        padding-left: var(--horizontal-padding-container);
+        padding-right: var(--horizontal-padding-container);
+    }
 }
 
 @media only screen and (min-width: $minWidthDesktop) {
