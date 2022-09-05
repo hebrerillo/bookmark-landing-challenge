@@ -1,7 +1,8 @@
 :root {
   --paragraph-maximum-width: 75rem;
   --horizontal-padding-container: 4rem;
-  --dark-blue: #242A45; }
+  --dark-blue: #242A45;
+  --color-white: #fff; }
 
 html {
   box-sizing: border-box;
@@ -40,7 +41,7 @@ img, picture {
   html {
     font-size: 62.5%;
     /*1 rem = 10px*/ } }
-h1, h2, h3, h4, h5, h6 {
+.heading-1, .heading-2, .heading-4 {
   text-transform: uppercase; }
 
 .heading-1 {
@@ -51,6 +52,11 @@ h1, h2, h3, h4, h5, h6 {
 .heading-2 {
   font-size: 3rem;
   letter-spacing: -0.08px; }
+
+.heading-4 {
+  font-size: 2.5rem;
+  letter-spacing: 2.31px;
+  font-weight: 400; }
 
 @media only screen and (min-width: 90em) {
   .heading-1 {
@@ -78,7 +84,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 3;
     position: absolute;
     inset: 0;
-    min-height: 100%; }
+    min-height: 100%;
+    padding-top: 13rem; }
     .main-header .navigation-menu--header::before {
       content: "";
       position: absolute;
@@ -86,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
       background-color: var(--dark-blue, #242A45);
       opacity: 0.95;
       z-index: 1; }
+    .main-header .navigation-menu--header ul {
+      position: relative;
+      z-index: 1; }
+      .main-header .navigation-menu--header ul .heading-4 {
+        color: var(--color-white); }
   .main-header #header-checkbox-buttons:checked ~ .header--logo path {
     fill: #ffffff; }
   .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
