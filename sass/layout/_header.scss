@@ -26,6 +26,8 @@
         inset: 0;
         min-height: 100%;
         padding-top: 13rem;
+        padding-left: var(--horizontal-padding-container, 2rem);
+        padding-right: var(--horizontal-padding-container, 2rem);
 
         &::before {
             content: "";
@@ -37,10 +39,23 @@
         }
 
         ul {
+            display: flex;
+            flex-direction: column;
             position: relative;
             z-index: 1;
-            .heading-4 {
-                color: var(--color-white);
+
+            li {
+                padding: 3rem 0;
+                border-top: var(--thin-grey-border);
+                text-align: center;
+
+                .heading-4 {
+                    color: var(--color-white);
+                }
+            }
+            
+            li:last-child {
+                border-bottom: var(--thin-grey-border);
             }
         }
     }
