@@ -38,7 +38,8 @@ img, picture {
 
 .main-container {
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  padding-top: 5rem; }
 
 .main-header, .main-content {
   padding-left: var(--horizontal-padding-container, 2rem);
@@ -108,7 +109,7 @@ img, picture {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5rem; }
+  height: 3.4rem; }
   .main-header .header--logo, .main-header label {
     z-index: 4; }
   .main-header #header-checkbox-buttons {
@@ -169,7 +170,6 @@ img, picture {
     display: flex; }
   @media only screen and (min-width: 44rem) {
     .main-header {
-      padding-top: 0;
       height: 4.6rem; }
       .main-header label {
         display: none; }
@@ -208,14 +208,16 @@ img, picture {
       .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
         fill: #5267DF; } }
 
-.hero-section .hero-section--text {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem; }
-  .hero-section .hero-section--text .buttons-browsers {
+.hero-section {
+  padding-top: 9.2rem; }
+  .hero-section .hero-section--text {
     display: flex;
-    column-gap: 1.3rem;
-    justify-content: center;
-    flex-wrap: wrap; }
+    flex-direction: column;
+    row-gap: 2rem; }
+    .hero-section .hero-section--text .buttons-browsers {
+      display: flex;
+      column-gap: 1.3rem;
+      justify-content: center;
+      flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */

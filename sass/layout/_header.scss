@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5rem;
+    height: 3.4rem;
 
     .header--logo, label {
         z-index: 4;
@@ -99,7 +99,6 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        padding-top: 0;
         height: 4.6rem;
 
         label {
