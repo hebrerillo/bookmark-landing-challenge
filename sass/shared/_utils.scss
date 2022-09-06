@@ -1,0 +1,10 @@
+@mixin blue-background-with-radius {
+    content: "";
+    z-index: -1;
+    width: 200%;
+    height: 74%;
+    background-color: var(--blue);
+    border-radius: 125px;
+    position: absolute;
+    top: 22%;
+}

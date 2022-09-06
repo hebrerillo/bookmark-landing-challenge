@@ -234,8 +234,7 @@ img, picture {
   row-gap: 12.5rem; }
   .hero-section picture {
     position: relative;
-    overflow: hidden;
-    align-self: stretch; }
+    overflow: hidden; }
     .hero-section picture img {
       max-width: 100%; }
     .hero-section picture::before {
@@ -281,9 +280,9 @@ img, picture {
 
 .features-section {
   padding-top: 17.5rem; }
-  .features-section h2 {
+  .features-section .features-description h2 {
     margin-bottom: 2rem; }
-  .features-section .default-paragraph {
+  .features-section .features-description .default-paragraph {
     margin-bottom: 4rem; }
   .features-section ul {
     margin-bottom: 8rem; }
@@ -309,5 +308,30 @@ img, picture {
       display: block;
       left: 50%;
       transform: translateX(-50%); }
+  .features-section .feature-tab picture {
+    margin-bottom: 5rem;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5rem; }
+    .features-section .feature-tab picture img {
+      width: 85%;
+      margin: 0 auto; }
+    .features-section .feature-tab picture::before {
+      content: "";
+      z-index: -1;
+      width: 200%;
+      height: 74%;
+      background-color: var(--blue);
+      border-radius: 125px;
+      position: absolute;
+      top: 22%;
+      top: 15%;
+      right: 22%;
+      height: 83%; }
+  .features-section .feature-tab .feature-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

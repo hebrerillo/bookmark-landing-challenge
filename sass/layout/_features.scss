@@ -1,12 +1,14 @@
 .features-section {
     padding-top: 17.5rem;
 
-    h2 {
-        margin-bottom: 2rem;
-    }
+    .features-description {
+        h2 {
+            margin-bottom: 2rem;
+        }
 
-    .default-paragraph {
-        margin-bottom: 4rem;
+        .default-paragraph {
+            margin-bottom: 4rem;
+        }
     }
 
     ul {
@@ -40,6 +42,35 @@
             display: block;
             left: 50%;
             transform: translateX(-50%);
+        }
+    }
+
+
+    .feature-tab {
+        picture {
+            margin-bottom: 5rem;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 5rem;
+
+            img {
+                width: 85%;
+                margin: 0 auto;
+            }
+            
+            &::before {
+                @include blue-background-with-radius;
+                top: 15%;
+                right: 22%;
+                height: 83%;
+            }
+        }
+
+        .feature-text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+            align-items: center;
         }
     }
 }
