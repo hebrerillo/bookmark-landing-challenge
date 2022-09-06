@@ -151,5 +151,16 @@
                 }
             }
         }
+
+        #header-checkbox-buttons:checked ~ .header--logo {
+            path {
+                fill: #242A45;
+            }
+
+            circle {
+                fill: #5267DF;
+            }
+        }
+
     }
 }

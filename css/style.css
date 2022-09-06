@@ -38,6 +38,9 @@ img, picture {
     padding-left: var(--horizontal-padding-container, 2rem);
     padding-right: var(--horizontal-padding-container, 2rem); }
 
+@media only screen and (min-width: 44rem) {
+  .main-container {
+    padding-top: 4.8rem; } }
 @media only screen and (min-width: 90em) {
   :root {
     --paragraph-maximum-width: 80rem; }
@@ -172,6 +175,10 @@ img, picture {
           .main-header .navigation-menu--header ul li:last-child:hover {
             background-color: #fff; }
             .main-header .navigation-menu--header ul li:last-child:hover .heading-4 {
-              color: var(--light-red); } }
+              color: var(--light-red); }
+      .main-header #header-checkbox-buttons:checked ~ .header--logo path {
+        fill: #242A45; }
+      .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
+        fill: #5267DF; } }
 
 /*# sourceMappingURL=style.css.map */

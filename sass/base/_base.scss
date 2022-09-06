@@ -48,6 +48,12 @@ img, picture {
     }
 }
 
+@media only screen and (min-width: $minWidthTabletPortrait) {
+    .main-container {
+        padding-top: 4.8rem;
+    }
+}
+
 @media only screen and (min-width: $minWidthDesktop) {
 
     :root {
