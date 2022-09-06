@@ -145,7 +145,8 @@ img, picture {
         border-top: var(--thin-grey-border);
         text-align: center; }
         .main-header .navigation-menu--header ul li .heading-4 {
-          color: var(--color-white); }
+          color: var(--color-white);
+          text-transform: uppercase; }
       .main-header .navigation-menu--header ul li:last-child {
         padding-bottom: 0;
         display: block;
