@@ -131,5 +131,8 @@ img, picture {
     display: none; }
   .main-header #header-checkbox-buttons:checked ~ .navigation-menu--header {
     display: flex; }
+  @media only screen and (min-width: 44rem) {
+    .main-header label, .main-header .navigation-menu--header .header-social-networks {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */
