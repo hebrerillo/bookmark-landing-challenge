@@ -43,7 +43,7 @@ img, picture {
   padding-top: 5rem;
   margin: 0 auto; }
 
-.main-header, .hero-section--text {
+.main-header {
   padding-left: var(--horizontal-padding-container, 2rem);
   padding-right: var(--horizontal-padding-container, 2rem); }
 
@@ -250,7 +250,9 @@ img, picture {
   .hero-section .hero-section--text {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem; }
+    row-gap: 2rem;
+    padding-left: var(--horizontal-padding-container, 2rem);
+    padding-right: var(--horizontal-padding-container, 2rem); }
     .hero-section .hero-section--text .buttons-browsers {
       display: flex;
       column-gap: 1.3rem;
@@ -280,6 +282,9 @@ img, picture {
 
 .features-section {
   padding-top: 17.5rem; }
+  .features-section .features-description, .features-section #features-tabs, .features-section .feature-text {
+    padding-left: var(--horizontal-padding-container, 2rem);
+    padding-right: var(--horizontal-padding-container, 2rem); }
   .features-section .features-description h2 {
     margin-bottom: 2rem; }
   .features-section .features-description .default-paragraph {

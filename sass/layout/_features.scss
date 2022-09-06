@@ -1,6 +1,11 @@
 .features-section {
     padding-top: 17.5rem;
 
+    .features-description, #features-tabs, .feature-text {
+        padding-left: var(--horizontal-padding-container, 2rem);
+        padding-right: var(--horizontal-padding-container, 2rem);
+    }
+
     .features-description {
         h2 {
             margin-bottom: 2rem;
