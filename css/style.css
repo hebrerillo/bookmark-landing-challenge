@@ -41,7 +41,7 @@ img, picture {
   position: relative;
   padding-top: 5rem; }
 
-.main-header, .main-content {
+.main-header, .hero-section--text {
   padding-left: var(--horizontal-padding-container, 2rem);
   padding-right: var(--horizontal-padding-container, 2rem); }
 
@@ -210,7 +210,26 @@ img, picture {
         fill: #5267DF; } }
 
 .hero-section {
-  padding-top: 9.2rem; }
+  padding-top: 9.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12.5rem; }
+  .hero-section .hero-picture {
+    position: relative;
+    overflow: hidden;
+    align-self: stretch; }
+    .hero-section .hero-picture img {
+      width: 100%; }
+    .hero-section .hero-picture .blue-background {
+      z-index: -1;
+      width: 200%;
+      height: 74%;
+      background-color: var(--blue);
+      border-radius: 125px;
+      position: absolute;
+      top: 22%;
+      left: 14%; }
   .hero-section .hero-section--text {
     display: flex;
     flex-direction: column;

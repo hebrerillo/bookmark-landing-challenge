@@ -1,5 +1,30 @@
 .hero-section {
     padding-top: 9.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12.5rem;
+
+    .hero-picture {
+        position: relative;
+        overflow: hidden;
+        align-self: stretch;
+
+        img {
+            width: 100%;
+        }
+
+        .blue-background{
+            z-index: -1;
+            width: 200%;
+            height: 74%;
+            background-color: var(--blue);
+            border-radius: 125px;
+            position: absolute;
+            top: 22%;
+            left: 14%;
+        }
+    }
 
     .hero-section--text {
         display: flex;
