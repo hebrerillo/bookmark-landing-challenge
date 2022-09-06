@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-
+        <script defer src="script/script.js"></script>
         <title>Frontend Mentor | Bookmark landing page</title>
     </head>
     <body>
@@ -60,19 +60,39 @@
                         <h2 class="heading-2">Features</h2>
                         <p class="default-paragraph">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>                        
                     </div>
-                    <ul>
-                        <li class="selected-tab"><a class="heading-5" href="">Simple Bookmarking</a></li>
-                        <li><a class="heading-5" href="">Speedy Search</a></li>
-                        <li><a class="heading-5" href="">Easy sharing</a></li>
+                    <ul id="features-tabs">
+                        <li><a data-target-tab="0" class="heading-5 selected-tab" href="">Simple Bookmarking</a></li>
+                        <li><a data-target-tab="1" class="heading-5" href="">Speedy Search</a></li>
+                        <li><a data-target-tab="2" class="heading-5" href="">Easy sharing</a></li>
                     </ul>
-                    <div class="features-tab">
-                        <div class="feature-tab" data-tabindex="0">
+                    <div class="features-container">
+                        <div class="feature selected-feature" data-tabindex="0">
                             <picture>
                                 <img alt="Bookmark in one click" src="images/illustration-features-tab-1.svg" />
                             </picture>
                             <div class="feature-text">
                                 <h3 class="heading-2">Bookmark in one click</h3>
                                 <p class="default-paragraph">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                                <a href="#" class="button button--blue">More info</a>
+                            </div>
+                        </div>
+                        <div class="feature" data-tabindex="1">
+                            <picture>
+                                <img alt="Bookmark in one click" src="images/illustration-features-tab-2.svg" />
+                            </picture>
+                            <div class="feature-text">
+                                <h3 class="heading-2">Intelligent search</h3>
+                                <p class="default-paragraph">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                                <a href="#" class="button button--blue">More info</a>
+                            </div>
+                        </div>
+                        <div class="feature" data-tabindex="2">
+                            <picture>
+                                <img alt="Bookmark in one click" src="images/illustration-features-tab-3.svg" />
+                            </picture>
+                            <div class="feature-text">
+                                <h3 class="heading-2">Share your bookmarks</h3>
+                                <p class="default-paragraph">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
                                 <a href="#" class="button button--blue">More info</a>
                             </div>
                         </div>

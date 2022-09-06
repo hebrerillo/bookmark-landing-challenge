@@ -296,42 +296,46 @@ img, picture {
         display: flex;
         align-items: center;
         position: relative; }
+      .features-section ul li .selected-tab.heading-5::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 4px;
+        background-color: var(--light-red);
+        display: block;
+        left: 50%;
+        transform: translateX(-50%); }
     .features-section ul li:last-child {
       border-bottom: 1px solid rgba(73, 93, 207, 0.2); }
-    .features-section ul .selected-tab .heading-5::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 90%;
-      height: 4px;
-      background-color: var(--light-red);
-      display: block;
-      left: 50%;
-      transform: translateX(-50%); }
-  .features-section .feature-tab picture {
-    margin-bottom: 5rem;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 5rem; }
-    .features-section .feature-tab picture img {
-      width: 85%;
-      margin: 0 auto; }
-    .features-section .feature-tab picture::before {
-      content: "";
-      z-index: -1;
-      width: 200%;
-      height: 74%;
-      background-color: var(--blue);
-      border-radius: 125px;
-      position: absolute;
-      top: 22%;
-      top: 15%;
-      right: 22%;
-      height: 83%; }
-  .features-section .feature-tab .feature-text {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    align-items: center; }
+  .features-section .feature {
+    display: none; }
+    .features-section .feature picture {
+      margin-bottom: 5rem;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 5rem; }
+      .features-section .feature picture img {
+        width: 85%;
+        margin: 0 auto; }
+      .features-section .feature picture::before {
+        content: "";
+        z-index: -1;
+        width: 200%;
+        height: 74%;
+        background-color: var(--blue);
+        border-radius: 125px;
+        position: absolute;
+        top: 22%;
+        top: 15%;
+        right: 22%;
+        height: 83%; }
+    .features-section .feature .feature-text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      align-items: center; }
+  .features-section .feature.selected-feature {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */

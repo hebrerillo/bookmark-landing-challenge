@@ -26,27 +26,28 @@
                 align-items: center;
                 position: relative;
             }
+
+            .selected-tab.heading-5::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 90%;
+                height: 4px;
+                background-color: var(--light-red);
+                display: block;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         li:last-child {
             border-bottom: 1px solid rgba(73, 93, 207, 0.20);
         }
-
-        .selected-tab .heading-5::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            width: 90%;
-            height: 4px;
-            background-color: var(--light-red);
-            display: block;
-            left: 50%;
-            transform: translateX(-50%);
-        }
     }
 
 
-    .feature-tab {
+    .feature {
+        display: none;
         picture {
             margin-bottom: 5rem;
             position: relative;
@@ -57,7 +58,7 @@
                 width: 85%;
                 margin: 0 auto;
             }
-            
+
             &::before {
                 @include blue-background-with-radius;
                 top: 15%;
@@ -72,5 +73,9 @@
             row-gap: 2rem;
             align-items: center;
         }
+    }
+
+    .feature.selected-feature {
+        display: block;
     }
 }
