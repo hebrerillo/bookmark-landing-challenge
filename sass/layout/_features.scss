@@ -85,6 +85,9 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .features-description, #features-tabs, .feature-text {
             padding-left: 0;
@@ -96,6 +99,33 @@
             .default-paragraph {
                 margin-left: auto;
                 margin-right: auto;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgba(73, 93, 207, 0.20);
+            li {
+                border-top: none;
+                height: auto;
+                display: block;
+                padding: 0 6rem 3.5rem 6rem;
+                position: relative;
+
+                .heading-5 {
+                    position: static;
+                }
+
+                .selected-tab.heading-5::before {
+                    width: 100%;
+                    left: 0;
+                    transform: none;
+                }
+            }
+
+            li:last-child {
+                border-bottom: none;
             }
         }
     }

@@ -343,13 +343,35 @@ img, picture {
   .features-section .feature.selected-feature {
     display: block; }
   @media only screen and (min-width: 44rem) {
-    .features-section .features-description, .features-section #features-tabs, .features-section .feature-text {
-      padding-left: 0;
-      padding-right: 0; }
-    .features-section .features-description {
-      text-align: center; }
-      .features-section .features-description .default-paragraph {
-        margin-left: auto;
-        margin-right: auto; } }
+    .features-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .features-section .features-description, .features-section #features-tabs, .features-section .feature-text {
+        padding-left: 0;
+        padding-right: 0; }
+      .features-section .features-description {
+        text-align: center; }
+        .features-section .features-description .default-paragraph {
+          margin-left: auto;
+          margin-right: auto; }
+      .features-section ul {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgba(73, 93, 207, 0.2); }
+        .features-section ul li {
+          border-top: none;
+          height: auto;
+          display: block;
+          padding: 0 6rem 3.5rem 6rem;
+          position: relative; }
+          .features-section ul li .heading-5 {
+            position: static; }
+          .features-section ul li .selected-tab.heading-5::before {
+            width: 100%;
+            left: 0;
+            transform: none; }
+        .features-section ul li:last-child {
+          border-bottom: none; } }
 
 /*# sourceMappingURL=style.css.map */
