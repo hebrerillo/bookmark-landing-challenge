@@ -4,7 +4,10 @@
     --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
 
     /* Colors */
-    --dark-blue : #242A45;
+    --dark-blue : 36, 42, 69;
+    --blue: #5267DF;
+    --grey: #9194A2;
+    --light-grey: #F7F7F7;
     --color-white: #fff;
     --light-red: #FA5959;
 }
@@ -23,7 +26,7 @@ html {
 body {
     font-family: 'Rubik', sans-serif;
     line-height: 1;
-    color: var(--dark-blue);
+    color: rgb(var(--dark-blue));
     font-size: 1.8rem;
     text-align: center;
 }

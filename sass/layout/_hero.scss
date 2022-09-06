@@ -1,1 +1,16 @@
-
+.hero-section {
+    .hero-section--text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        
+        .buttons-browsers {
+            display: flex;
+            column-gap: 1.5rem;
+            
+            .button {
+                padding: 0;
+            }
+        }
+    }
+}

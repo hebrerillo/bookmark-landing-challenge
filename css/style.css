@@ -3,7 +3,10 @@
   --horizontal-padding-container: 4rem;
   --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
   /* Colors */
-  --dark-blue: #242A45;
+  --dark-blue: 36, 42, 69;
+  --blue: #5267DF;
+  --grey: #9194A2;
+  --light-grey: #F7F7F7;
   --color-white: #fff;
   --light-red: #FA5959; }
 
@@ -20,7 +23,7 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
-  color: var(--dark-blue);
+  color: rgb(var(--dark-blue));
   font-size: 1.8rem;
   text-align: center; }
 
@@ -51,11 +54,29 @@ img, picture {
   html {
     font-size: 62.5%;
     /*1 rem = 10px*/ } }
+.button {
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  letter-spacing: 0.25px;
+  font-size: 1.75rem;
+  font-weight: 500; }
+
+.button--blue {
+  background-color: var(--blue);
+  color: var(--color-white); }
+
+.button--grey {
+  background-color: var(--light-grey);
+  color: rgba(var(--dark-blue), 0.75); }
+
+@media only screen and (min-width: 90em) {
+  .button {
+    font-size: 1.4rem; } }
 .heading-1 {
   font-size: 3.75rem;
   letter-spacing: -0.09px;
   font-weight: 500;
-  line-height: 1.5; }
+  line-height: 1.4; }
 
 .heading-2 {
   font-size: 3rem;
@@ -112,7 +133,7 @@ img, picture {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: var(--dark-blue, #242A45);
+      background-color: rgb(var(--dark-blue));
       opacity: 0.95;
       z-index: -1; }
     .main-header .navigation-menu--header ul {
@@ -169,7 +190,7 @@ img, picture {
             padding: 0;
             border: none; }
             .main-header .navigation-menu--header ul li .heading-4 {
-              color: var(--dark-blue); }
+              color: rgb(var(--dark-blue)); }
           .main-header .navigation-menu--header ul li .heading-4:hover {
             color: var(--light-red); }
           .main-header .navigation-menu--header ul li:last-child {
@@ -186,5 +207,15 @@ img, picture {
         fill: #242A45; }
       .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
         fill: #5267DF; } }
+
+.hero-section .hero-section--text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem; }
+  .hero-section .hero-section--text .buttons-browsers {
+    display: flex;
+    column-gap: 1.5rem; }
+    .hero-section .hero-section--text .buttons-browsers .button {
+      padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
