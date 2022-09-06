@@ -16,18 +16,16 @@
     font-weight: 400;
 }
 
+.heading-5 {
+    font-size: 2rem;
+    letter-spacing: 0.35px;
+    font-weight: 400;
+}
+
 .default-paragraph {
     opacity: 0.5;
     max-width: var(--paragraph-maximum-width);
     line-height: 1.8;
-}
-
-@media only screen and (min-width: $minWidthTabletPortrait) {
-
-    .heading-4 {
-        font-size: 1.3rem;
-        letter-spacing: 1.5px;
-    }
 }
 
 @media only screen and (min-width: $minWidthDesktop) {
@@ -39,5 +37,14 @@
     .heading-2 {
         font-size: 4rem;
         letter-spacing: -0.1px;
+    }
+
+    .heading-4 {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+    }
+
+    .heading-5 {
+        font-size: 1.6rem;
     }
 }
