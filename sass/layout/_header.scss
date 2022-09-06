@@ -54,21 +54,19 @@
                     color: var(--color-white);
                 }
             }
-            
-            li.login-link {
+
+            li:last-child {
                 padding-bottom: 0;
+                display: block;
+                padding: 1.5rem 0;
+                border: 2px solid var(--color-white);
+                border-radius: 5px;
                 a {
-                    display: block;
-                    padding: 1.5rem 0;
-                    border: 2px solid var(--color-white);
-                    border-radius: 5px;
-                    .heading-4 {
-                        font-weight: 500;
-                    }
+                    font-weight: 500;
                 }
             }
         }
-        
+
         .header-social-networks {
             display: flex;
             justify-content: center;
@@ -99,10 +97,59 @@
     #header-checkbox-buttons:checked ~ .navigation-menu--header {
         display: flex;
     }
-    
+
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        label, .navigation-menu--header .header-social-networks {
+        padding-top: 0;
+        height: 4.6rem;
+
+        label {
             display: none;
+        }
+
+        .navigation-menu--header {
+            display: block;
+            position: static;
+            z-index: auto;
+            min-height: auto;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .header-social-networks, &::before {
+                display: none;
+            }
+
+            ul {
+                flex-direction: row;
+                column-gap: 4.5rem;
+                align-items: center;
+
+                li {
+                    padding: 0;
+                    border: none;
+                    .heading-4 {
+                        color: var(--dark-blue);
+                    }
+                }
+
+                li .heading-4:hover {
+                    color: var(--light-red);
+                }
+
+                li:last-child {
+                    cursor: pointer;
+                    padding: 1rem 4rem;
+                    border: 2px solid var(--light-red);
+                    background-color: var(--light-red);
+                    color: var(--color-white);
+                }
+
+                li:last-child:hover {
+                    background-color: #fff;
+                    .heading-4 {
+                        color: var(--light-red);
+                    }
+                }
+            }
         }
     }
 }

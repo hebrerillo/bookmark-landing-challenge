@@ -1,9 +1,11 @@
 :root {
   --paragraph-maximum-width: 75rem;
   --horizontal-padding-container: 4rem;
+  --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
+  /* Colors */
   --dark-blue: #242A45;
   --color-white: #fff;
-  --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15); }
+  --light-red: #FA5959; }
 
 html {
   box-sizing: border-box;
@@ -17,7 +19,8 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
-  line-height: 1; }
+  line-height: 1;
+  color: var(--dark-blue); }
 
 ul {
   list-style: none; }
@@ -59,6 +62,10 @@ img, picture {
   letter-spacing: 2.31px;
   font-weight: 400; }
 
+@media only screen and (min-width: 44rem) {
+  .heading-4 {
+    font-size: 1.3rem;
+    letter-spacing: 1.5px; } }
 @media only screen and (min-width: 90em) {
   .heading-1 {
     font-size: 4.8rem;
@@ -108,15 +115,14 @@ img, picture {
         text-align: center; }
         .main-header .navigation-menu--header ul li .heading-4 {
           color: var(--color-white); }
-      .main-header .navigation-menu--header ul li.login-link {
-        padding-bottom: 0; }
-        .main-header .navigation-menu--header ul li.login-link a {
-          display: block;
-          padding: 1.5rem 0;
-          border: 2px solid var(--color-white);
-          border-radius: 5px; }
-          .main-header .navigation-menu--header ul li.login-link a .heading-4 {
-            font-weight: 500; }
+      .main-header .navigation-menu--header ul li:last-child {
+        padding-bottom: 0;
+        display: block;
+        padding: 1.5rem 0;
+        border: 2px solid var(--color-white);
+        border-radius: 5px; }
+        .main-header .navigation-menu--header ul li:last-child a {
+          font-weight: 500; }
     .main-header .navigation-menu--header .header-social-networks {
       display: flex;
       justify-content: center;
@@ -132,7 +138,40 @@ img, picture {
   .main-header #header-checkbox-buttons:checked ~ .navigation-menu--header {
     display: flex; }
   @media only screen and (min-width: 44rem) {
-    .main-header label, .main-header .navigation-menu--header .header-social-networks {
-      display: none; } }
+    .main-header {
+      padding-top: 0;
+      height: 4.6rem; }
+      .main-header label {
+        display: none; }
+      .main-header .navigation-menu--header {
+        display: block;
+        position: static;
+        z-index: auto;
+        min-height: auto;
+        padding-top: 0;
+        padding-bottom: 0; }
+        .main-header .navigation-menu--header .header-social-networks, .main-header .navigation-menu--header::before {
+          display: none; }
+        .main-header .navigation-menu--header ul {
+          flex-direction: row;
+          column-gap: 4.5rem;
+          align-items: center; }
+          .main-header .navigation-menu--header ul li {
+            padding: 0;
+            border: none; }
+            .main-header .navigation-menu--header ul li .heading-4 {
+              color: var(--dark-blue); }
+          .main-header .navigation-menu--header ul li .heading-4:hover {
+            color: var(--light-red); }
+          .main-header .navigation-menu--header ul li:last-child {
+            cursor: pointer;
+            padding: 1rem 4rem;
+            border: 2px solid var(--light-red);
+            background-color: var(--light-red);
+            color: var(--color-white); }
+          .main-header .navigation-menu--header ul li:last-child:hover {
+            background-color: #fff; }
+            .main-header .navigation-menu--header ul li:last-child:hover .heading-4 {
+              color: var(--light-red); } }
 
 /*# sourceMappingURL=style.css.map */
