@@ -55,7 +55,7 @@ img, picture {
     font-size: 62.5%;
     /*1 rem = 10px*/ } }
 .button {
-  padding: 2rem 3rem;
+  padding: 1.7rem;
   border-radius: 5px;
   letter-spacing: 0.25px;
   font-size: 1.75rem;
@@ -214,8 +214,8 @@ img, picture {
   row-gap: 2rem; }
   .hero-section .hero-section--text .buttons-browsers {
     display: flex;
-    column-gap: 1.5rem; }
-    .hero-section .hero-section--text .buttons-browsers .button {
-      padding: 0; }
+    column-gap: 1.3rem;
+    justify-content: center;
+    flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,14 +3,12 @@
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
-        
+
         .buttons-browsers {
             display: flex;
-            column-gap: 1.5rem;
-            
-            .button {
-                padding: 0;
-            }
+            column-gap: 1.3rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
     }
 }
