@@ -5,7 +5,7 @@
     align-items: center;
     row-gap: 12.5rem;
 
-    .hero-picture {
+    picture {
         position: relative;
         overflow: hidden;
         align-self: stretch;
@@ -14,7 +14,8 @@
             width: 100%;
         }
 
-        .blue-background{
+        &::before{
+            content: "";
             z-index: -1;
             width: 200%;
             height: 74%;
@@ -37,5 +38,9 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+    }
+    
+    @media only screen and (min-width: $minWidthDesktop) { 
+        
     }
 }

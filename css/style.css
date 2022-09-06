@@ -54,7 +54,10 @@ img, picture {
 
   html {
     font-size: 62.5%;
-    /*1 rem = 10px*/ } }
+    /*1 rem = 10px*/ }
+
+  body {
+    text-align: left; } }
 .button {
   padding: 1.7rem;
   border-radius: 5px;
@@ -216,13 +219,14 @@ img, picture {
   flex-direction: column;
   align-items: center;
   row-gap: 12.5rem; }
-  .hero-section .hero-picture {
+  .hero-section picture {
     position: relative;
     overflow: hidden;
     align-self: stretch; }
-    .hero-section .hero-picture img {
+    .hero-section picture img {
       width: 100%; }
-    .hero-section .hero-picture .blue-background {
+    .hero-section picture::before {
+      content: "";
       z-index: -1;
       width: 200%;
       height: 74%;
