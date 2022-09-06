@@ -11,7 +11,7 @@
         align-self: stretch;
 
         img {
-            width: 100%;
+            max-width: 100%;
         }
 
         &::before{
@@ -40,7 +40,37 @@
         }
     }
     
+    @media only screen and (min-width: $minWidthTabletPortrait) { 
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        row-gap: 0;
+        column-gap: 4rem;
+        padding-left: var(--horizontal-padding-container, 2rem);
+
+        .hero-section--text {
+            padding: 0;
+            align-items: start;
+            .buttons-browsers {
+                justify-content: start;
+                column-gap: 2.5rem;
+            }
+        }
+    }
+    
     @media only screen and (min-width: $minWidthDesktop) { 
-        
+        .hero-section--text {
+            .default-paragraph {
+                width: 74%;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: $minWidthBigDesktop) { 
+        .hero-section--text {
+            flex-grow: 1;
+            .default-paragraph {
+                width: auto;
+            }
+        }
     }
 }

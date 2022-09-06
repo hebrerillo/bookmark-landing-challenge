@@ -39,13 +39,17 @@ img, picture {
 .main-container {
   min-height: 100vh;
   position: relative;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  margin: 0 auto; }
 
 .main-header, .hero-section--text {
   padding-left: var(--horizontal-padding-container, 2rem);
   padding-right: var(--horizontal-padding-container, 2rem); }
 
 @media only screen and (min-width: 44rem) {
+  body {
+    text-align: left; }
+
   .main-container {
     padding-top: 4.8rem; } }
 @media only screen and (min-width: 90em) {
@@ -56,8 +60,8 @@ img, picture {
     font-size: 62.5%;
     /*1 rem = 10px*/ }
 
-  body {
-    text-align: left; } }
+  .main-container {
+    max-width: 180rem; } }
 .button {
   padding: 1.7rem;
   border-radius: 5px;
@@ -224,7 +228,7 @@ img, picture {
     overflow: hidden;
     align-self: stretch; }
     .hero-section picture img {
-      width: 100%; }
+      max-width: 100%; }
     .hero-section picture::before {
       content: "";
       z-index: -1;
@@ -244,5 +248,26 @@ img, picture {
       column-gap: 1.3rem;
       justify-content: center;
       flex-wrap: wrap; }
+  @media only screen and (min-width: 44rem) {
+    .hero-section {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      row-gap: 0;
+      column-gap: 4rem;
+      padding-left: var(--horizontal-padding-container, 2rem); }
+      .hero-section .hero-section--text {
+        padding: 0;
+        align-items: start; }
+        .hero-section .hero-section--text .buttons-browsers {
+          justify-content: start;
+          column-gap: 2.5rem; } }
+  @media only screen and (min-width: 90em) {
+    .hero-section .hero-section--text .default-paragraph {
+      width: 74%; } }
+  @media only screen and (min-width: 112.5em) {
+    .hero-section .hero-section--text {
+      flex-grow: 1; }
+      .hero-section .hero-section--text .default-paragraph {
+        width: auto; } }
 
 /*# sourceMappingURL=style.css.map */
