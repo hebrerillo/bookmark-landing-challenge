@@ -20,7 +20,9 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
-  color: var(--dark-blue); }
+  color: var(--dark-blue);
+  font-size: 1.8rem;
+  text-align: center; }
 
 ul {
   list-style: none; }
@@ -34,9 +36,10 @@ img, picture {
 .main-container {
   min-height: 100vh;
   position: relative; }
-  .main-container .container {
-    padding-left: var(--horizontal-padding-container, 2rem);
-    padding-right: var(--horizontal-padding-container, 2rem); }
+
+.main-header, .main-content {
+  padding-left: var(--horizontal-padding-container, 2rem);
+  padding-right: var(--horizontal-padding-container, 2rem); }
 
 @media only screen and (min-width: 44rem) {
   .main-container {
@@ -48,13 +51,11 @@ img, picture {
   html {
     font-size: 62.5%;
     /*1 rem = 10px*/ } }
-.heading-1, .heading-2, .heading-4 {
-  text-transform: uppercase; }
-
 .heading-1 {
   font-size: 3.75rem;
   letter-spacing: -0.09px;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1.5; }
 
 .heading-2 {
   font-size: 3rem;
@@ -64,6 +65,11 @@ img, picture {
   font-size: 2.5rem;
   letter-spacing: 2.31px;
   font-weight: 400; }
+
+.default-paragraph {
+  opacity: 0.5;
+  max-width: var(--paragraph-maximum-width);
+  line-height: 1.8; }
 
 @media only screen and (min-width: 44rem) {
   .heading-4 {

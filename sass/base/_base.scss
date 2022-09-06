@@ -3,7 +3,7 @@
     --horizontal-padding-container: 4rem;
     --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
 
-    /* Colors */    
+    /* Colors */
     --dark-blue : #242A45;
     --color-white: #fff;
     --light-red: #FA5959;
@@ -24,6 +24,8 @@ body {
     font-family: 'Rubik', sans-serif;
     line-height: 1;
     color: var(--dark-blue);
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 ul {
@@ -41,11 +43,11 @@ img, picture {
 .main-container {
     min-height: 100vh;
     position: relative;
+}
 
-    .container {
-        padding-left: var(--horizontal-padding-container, 2rem);
-        padding-right: var(--horizontal-padding-container, 2rem);
-    }
+.main-header, .main-content {
+    padding-left: var(--horizontal-padding-container, 2rem);
+    padding-right: var(--horizontal-padding-container, 2rem);
 }
 
 @media only screen and (min-width: $minWidthTabletPortrait) {
