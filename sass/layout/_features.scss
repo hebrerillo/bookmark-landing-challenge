@@ -67,7 +67,7 @@
             &::before {
                 @include blue-background-with-radius;
                 top: 15%;
-                right: 22%;
+                right: 14%;
                 height: 83%;
             }
         }
@@ -132,22 +132,21 @@
         .features-container {
             .feature {
                 grid-template-columns: 1fr 1fr;
-                column-gap: 4rem;
+                align-items: center;
                 picture {
                     display: flex;
                     justify-content: end;
                     margin-bottom: 0;
                     img {
                         margin: 0;
-                        width: 90%;
+                        width: 77%;
                     }
                 }
                 
                 .feature-text {
                     text-align: left;
                     align-items: start;
-                    padding-left: 0;
-                    padding-right: var(--horizontal-padding-container, 2rem);
+                    padding: 0 12rem;
                 }
             }
             
