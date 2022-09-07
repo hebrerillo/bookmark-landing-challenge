@@ -1,0 +1,72 @@
+.section-download {
+    padding-top: 10rem;
+    padding-left: var(--horizontal-padding-container, 2rem);
+    padding-right: var(--horizontal-padding-container, 2rem);
+
+    .download-text {
+        text-align: center;
+        margin-bottom: 7rem;
+        .default-paragraph {
+            margin: 0 auto;
+        }
+    }
+
+    .browsers {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5rem;
+        column-gap: 3.4rem;
+        align-items: start;
+        justify-content: center;
+
+        .browser {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3.75rem 0 2.75rem 0rem;
+            box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+
+            picture {
+                margin-bottom: 4rem;
+            }
+
+            .default-paragraph {
+                margin-bottom: 3.7rem;
+            }
+
+            .dot-separator {
+                margin-bottom: 2rem;
+                height: 4px;
+                align-self: stretch;
+                background-image: url('../images/bg-dots.svg');
+            }
+
+            .button-container {
+                padding: 0 3rem;
+                .button--blue {
+                    display: block;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthTabletLandscape) {
+
+        .download-text {
+            margin-bottom: 5.5rem;
+        }
+
+        .browsers {
+            .browser:nth-child(2) {
+                margin-top: 4rem;
+            }
+
+            .browser:nth-child(3) {
+                margin-top: 8rem;
+            }
+        }
+    }
+}

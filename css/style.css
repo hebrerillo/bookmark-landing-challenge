@@ -105,7 +105,13 @@ img, picture {
 
 .heading-2 {
   font-size: 3rem;
-  letter-spacing: -0.08px; }
+  letter-spacing: -0.08px;
+  margin-bottom: 2rem; }
+
+.heading-3 {
+  font-size: 2.5rem;
+  letter-spacing: 0.25px;
+  margin-bottom: 1.4rem; }
 
 .heading-4 {
   font-size: 2.5rem;
@@ -123,6 +129,9 @@ img, picture {
   line-height: 1.8; }
 
 @media only screen and (min-width: 44rem) {
+  .heading-3 {
+    font-size: 2rem; }
+
   .heading-4 {
     font-size: 1.3rem;
     letter-spacing: 1.5px; } }
@@ -305,8 +314,6 @@ img, picture {
   .features-section .features-description, .features-section #features-tabs, .features-section .feature-text {
     padding-left: var(--horizontal-padding-container, 2rem);
     padding-right: var(--horizontal-padding-container, 2rem); }
-  .features-section .features-description h2 {
-    margin-bottom: 2rem; }
   .features-section .features-description .default-paragraph {
     margin-bottom: 4rem; }
   .features-section ul {
@@ -360,6 +367,8 @@ img, picture {
       flex-direction: column;
       row-gap: 2rem;
       align-items: center; }
+      .features-section .feature .feature-text .heading-2 {
+        margin-bottom: 0; }
   .features-section .feature.selected-feature {
     display: block; }
   @media only screen and (min-width: 44rem) {
@@ -409,5 +418,51 @@ img, picture {
           padding: 0 12rem; }
       .features-section .features-container .feature.selected-feature {
         display: grid; } }
+
+.section-download {
+  padding-top: 10rem;
+  padding-left: var(--horizontal-padding-container, 2rem);
+  padding-right: var(--horizontal-padding-container, 2rem); }
+  .section-download .download-text {
+    text-align: center;
+    margin-bottom: 7rem; }
+    .section-download .download-text .default-paragraph {
+      margin: 0 auto; }
+  .section-download .browsers {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    column-gap: 3.4rem;
+    align-items: start;
+    justify-content: center; }
+    .section-download .browsers .browser {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3.75rem 0 2.75rem 0rem;
+      box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 5px; }
+      .section-download .browsers .browser picture {
+        margin-bottom: 4rem; }
+      .section-download .browsers .browser .default-paragraph {
+        margin-bottom: 3.7rem; }
+      .section-download .browsers .browser .dot-separator {
+        margin-bottom: 2rem;
+        height: 4px;
+        align-self: stretch;
+        background-image: url("../images/bg-dots.svg"); }
+      .section-download .browsers .browser .button-container {
+        padding: 0 3rem; }
+        .section-download .browsers .browser .button-container .button--blue {
+          display: block;
+          padding-left: 4rem;
+          padding-right: 4rem; }
+  @media only screen and (min-width: 64rem) {
+    .section-download .download-text {
+      margin-bottom: 5.5rem; }
+    .section-download .browsers .browser:nth-child(2) {
+      margin-top: 4rem; }
+    .section-download .browsers .browser:nth-child(3) {
+      margin-top: 8rem; } }
 
 /*# sourceMappingURL=style.css.map */
