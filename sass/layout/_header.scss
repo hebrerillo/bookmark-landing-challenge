@@ -51,7 +51,6 @@
                 text-align: center;
 
                 .heading-4 {
-                    color: var(--color-white);
                     text-transform: uppercase;
                 }
             }
@@ -126,13 +125,6 @@
                 li {
                     padding: 0;
                     border: none;
-                    .heading-4 {
-                        color: rgb(var(--dark-blue));
-                    }
-                }
-
-                li .heading-4:hover {
-                    color: var(--light-red);
                 }
 
                 li:last-child {

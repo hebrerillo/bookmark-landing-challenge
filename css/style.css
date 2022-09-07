@@ -128,6 +128,12 @@ img, picture {
   max-width: var(--paragraph-maximum-width);
   line-height: 1.8; }
 
+.default-link {
+  color: var(--dark-blue); }
+
+.default-link:hover {
+  color: var(--light-red); }
+
 @media only screen and (min-width: 44rem) {
   .heading-3 {
     font-size: 2rem; }
@@ -186,7 +192,6 @@ img, picture {
         border-top: var(--thin-grey-border);
         text-align: center; }
         .main-header .navigation-menu--header ul li .heading-4 {
-          color: var(--color-white);
           text-transform: uppercase; }
       .main-header .navigation-menu--header ul li:last-child {
         padding-bottom: 0;
@@ -231,10 +236,6 @@ img, picture {
           .main-header .navigation-menu--header ul li {
             padding: 0;
             border: none; }
-            .main-header .navigation-menu--header ul li .heading-4 {
-              color: rgb(var(--dark-blue)); }
-          .main-header .navigation-menu--header ul li .heading-4:hover {
-            color: var(--light-red); }
           .main-header .navigation-menu--header ul li:last-child {
             cursor: pointer;
             padding: 1rem 4rem;

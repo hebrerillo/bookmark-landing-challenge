@@ -35,6 +35,14 @@
     line-height: 1.8;
 }
 
+.default-link {
+    color: var(--dark-blue);
+}
+
+.default-link:hover {
+    color: var(--light-red);
+}
+
 @media only screen and (min-width: $minWidthTabletPortrait) {
 
     .heading-3 {
