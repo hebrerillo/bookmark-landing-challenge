@@ -16,7 +16,7 @@
         margin-bottom: 8rem;
 
         li {
-            border-top: 1px solid rgba(73, 93, 207, 0.20);
+            border-top: var(--thin-grey-border-2);
             height: 7.25rem;
             display: flex;
             align-items: stretch;
@@ -42,7 +42,7 @@
         }
 
         li:last-child {
-            border-bottom: 1px solid rgba(73, 93, 207, 0.20);
+            border-bottom: var(--thin-grey-border-2);
         }
     }
 

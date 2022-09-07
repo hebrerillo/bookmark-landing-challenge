@@ -2,6 +2,7 @@
   --paragraph-maximum-width: 75rem;
   --horizontal-padding-container: 4rem;
   --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
+  --thin-grey-border-2: 1px solid rgba(73, 93, 207, 0.2);
   --box-shadow-buttons: 0 2px 7px 0px rgba(0, 0, 0, 0.2);
   --box-shadow-buttons-hover: 0 0 0 2px inset;
   /* Colors */
@@ -320,7 +321,7 @@ img, picture {
   .features-section ul {
     margin-bottom: 8rem; }
     .features-section ul li {
-      border-top: 1px solid rgba(73, 93, 207, 0.2);
+      border-top: var(--thin-grey-border-2);
       height: 7.25rem;
       display: flex;
       align-items: stretch;
@@ -340,7 +341,7 @@ img, picture {
         left: 50%;
         transform: translateX(-50%); }
     .features-section ul li:last-child {
-      border-bottom: 1px solid rgba(73, 93, 207, 0.2); }
+      border-bottom: var(--thin-grey-border-2); }
   .features-section .feature {
     display: none; }
     .features-section .feature picture {
@@ -465,5 +466,27 @@ img, picture {
       margin-top: 4rem; }
     .section-download .browsers .browser:nth-child(3) {
       margin-top: 8rem; } }
+
+.section-faq {
+  padding-top: 18rem;
+  padding-left: var(--horizontal-padding-container, 2rem);
+  padding-right: var(--horizontal-padding-container, 2rem); }
+  .section-faq .faq-text {
+    margin-bottom: 9rem;
+    text-align: center; }
+  .section-faq ul li {
+    border-bottom: var(--thin-grey-border-2);
+    padding-top: 3rem;
+    padding-bottom: 2rem; }
+    .section-faq ul li a {
+      display: flex;
+      justify-content: space-between; }
+      .section-faq ul li a img {
+        width: 18px;
+        height: 12px; }
+    .section-faq ul li .default-paragraph {
+      text-align: left;
+      display: none;
+      padding-top: 4rem; }
 
 /*# sourceMappingURL=style.css.map */
