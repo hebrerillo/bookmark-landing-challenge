@@ -55,7 +55,8 @@ img, picture {
     padding-top: 4.8rem; } }
 @media only screen and (min-width: 90em) {
   :root {
-    --paragraph-maximum-width: 80rem; }
+    --paragraph-maximum-width: 80rem;
+    --horizontal-padding-container: 17rem; }
 
   html {
     font-size: 62.5%;
@@ -225,6 +226,9 @@ img, picture {
         fill: #242A45; }
       .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
         fill: #5267DF; } }
+  @media only screen and (min-width: 90em) {
+    .main-header .navigation-menu--header {
+      padding: 0; } }
 
 .hero-section {
   padding-top: 9.2rem;
