@@ -2,6 +2,8 @@
   --paragraph-maximum-width: 75rem;
   --horizontal-padding-container: 4rem;
   --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
+  --box-shadow-buttons: 0 2px 7px 0px rgba(0, 0, 0, 0.2);
+  --box-shadow-buttons-hover: 0 0 0 2px inset;
   /* Colors */
   --dark-blue: 36, 42, 69;
   --blue: #5267DF;
@@ -71,14 +73,25 @@ img, picture {
   letter-spacing: 0.25px;
   font-size: 1.75rem;
   font-weight: 500;
-  box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: var(--box-shadow-buttons); }
+
+.button:hover {
+  box-shadow: var(--box-shadow-buttons), var(--box-shadow-buttons-hover); }
 
 .button--blue {
   background-color: var(--blue);
   color: var(--color-white); }
 
+.button--blue:hover {
+  background-color: var(--color-white);
+  color: var(--blue); }
+
 .button--grey {
   background-color: var(--light-grey);
+  color: rgba(var(--dark-blue), 0.75); }
+
+.button--grey:hover {
+  background-color: var(--color-white);
   color: rgba(var(--dark-blue), 0.75); }
 
 @media only screen and (min-width: 90em) {
