@@ -62,8 +62,9 @@ img, picture {
     font-size: 62.5%;
     /*1 rem = 10px*/ }
 
-  .main-container {
-    max-width: 180rem; } }
+  .main-content {
+    max-width: 144rem;
+    margin: 0 auto; } }
 .button {
   padding: 1.7rem;
   border-radius: 5px;
@@ -276,8 +277,10 @@ img, picture {
           justify-content: start;
           column-gap: 2.5rem; } }
   @media only screen and (min-width: 90em) {
-    .hero-section .hero-section--text .default-paragraph {
-      width: 74%; } }
+    .hero-section {
+      padding-top: 13rem; }
+      .hero-section .hero-section--text .default-paragraph {
+        width: 74%; } }
   @media only screen and (min-width: 112.5em) {
     .hero-section .hero-section--text {
       flex-grow: 1; }
