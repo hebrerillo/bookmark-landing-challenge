@@ -5,6 +5,7 @@
   --thin-grey-border-2: 1px solid rgba(73, 93, 207, 0.2);
   --box-shadow-buttons: 0 2px 7px 0px rgba(0, 0, 0, 0.2);
   --box-shadow-buttons-hover: 0 0 0 2px inset;
+  --default-transition-time: 0.3s;
   /* Colors */
   --dark-blue: 36, 42, 69;
   --blue: #5267DF;
@@ -490,16 +491,23 @@ img, picture {
       border-bottom: var(--thin-grey-border-2);
       padding-top: 3rem;
       padding-bottom: 2rem; }
-      .section-faq ul li a {
+      .section-faq ul li .question {
         display: flex;
         justify-content: space-between; }
-        .section-faq ul li a img {
+        .section-faq ul li .question svg {
           width: 18px;
           height: 12px; }
-      .section-faq ul li .default-paragraph {
-        text-align: left;
-        display: none;
-        padding-top: 4rem; }
+      .section-faq ul li .question.opened svg {
+        transform: rotateX(180deg); }
+        .section-faq ul li .question.opened svg path {
+          stroke: var(--light-red); }
+      .section-faq ul li .paragraph-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: all var(--default-transition-time); }
+        .section-faq ul li .paragraph-container .default-paragraph {
+          text-align: left;
+          padding-top: 4rem; }
   .section-faq .button--blue {
     display: block; }
   @media only screen and (min-width: 44rem) {

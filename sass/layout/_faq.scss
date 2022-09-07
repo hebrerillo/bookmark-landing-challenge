@@ -24,20 +24,34 @@
             padding-top: 3rem;
             padding-bottom: 2rem;
 
-            a {
+            .question {
                 display: flex;
                 justify-content: space-between;
 
-                img {
+                svg {
                     width: 18px;
                     height: 12px;
                 }
             }
 
-            .default-paragraph {
-                text-align: left;
-                display: none;
-                padding-top: 4rem;
+            .question.opened {
+                svg {
+                    transform: rotateX(180deg);
+                    path {
+                        stroke: var(--light-red);
+                    }
+                }
+            }
+
+            .paragraph-container {
+                max-height: 0;
+                overflow: hidden;
+                transition: all var(--default-transition-time);
+
+                .default-paragraph {
+                    text-align: left;
+                    padding-top: 4rem;
+                }
             }
         }
     }
