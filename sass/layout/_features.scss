@@ -7,10 +7,6 @@
     }
 
     .features-description {
-        h2 {
-            margin-bottom: 2rem;
-        }
-
         .default-paragraph {
             margin-bottom: 4rem;
         }
@@ -77,6 +73,9 @@
             flex-direction: column;
             row-gap: 2rem;
             align-items: center;
+            .heading-2 {
+                margin-bottom: 0;
+            }
         }
     }
 
