@@ -2,6 +2,10 @@
     padding-top: 8rem;
 
     .footer-form {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: minmax(auto, 47rem);
+        justify-content: center;
         padding-top: 9rem;
         background-color: var(--blue);
         padding-bottom: 4rem;
@@ -15,21 +19,29 @@
 
         .heading-2 {
             margin-bottom: 3.5rem;
+            text-align: center;
         }
 
         .heading-2, .heading-6 {
             color: var(--color-white);
         }
 
-        form {
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: start;
+            justify-self: stretch;
+
             .input-email-container {
                 position: relative;
                 border-radius: 5px;
                 overflow: hidden;
+                flex-grow: 1;
                 .email-input {
                     outline: none;
-                    border: none;
-                    padding: 1.5rem 2rem;
+                    padding: 0 2rem;
                     border: 2px solid transparent;
                     z-index: 2;
                     border-radius: 5px;
@@ -68,6 +80,7 @@
                 .email-input::placeholder {
                     opacity: 0.25;
                     color: rgb(var(--dark-blue));
+                    font-size: 1.75rem;
                 }
 
                 .email-input:invalid {
@@ -82,11 +95,34 @@
                     display: block;
                 }
             }
+
+            .button {
+                display: block;
+                flex-grow: 1;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .button, .input-email-container .email-input {
+                min-height: 6rem;
+            }
         }
     }
 
-    @media only screen and (min-width: $minWidthTabletPortrait) {
+    @media only screen and (min-width: $minWidthDesktop) {
         padding-top: 7rem;
-    }
+        .footer-form {
+            .contact-form {
+                .input-email-container {
+                    .email-input::placeholder {
+                        font-size: 1.4rem;
+                    }
+                }
 
+                .button, .input-email-container .email-input {
+                    min-height: 4.8rem;
+                }
+            }
+        }
+    }
 }

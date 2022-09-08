@@ -47,6 +47,14 @@ img, picture {
     display: block;
 }
 
+button {
+    line-height: 1;
+    padding-inline: 0;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
 .main-container {
     min-height: 100vh;
     position: relative;

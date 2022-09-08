@@ -41,6 +41,13 @@ a {
 img, picture {
   display: block; }
 
+button {
+  line-height: 1;
+  padding-inline: 0;
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer; }
+
 .main-container {
   min-height: 100vh;
   position: relative;
@@ -539,6 +546,10 @@ img, picture {
 .main-footer {
   padding-top: 8rem; }
   .main-footer .footer-form {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: minmax(auto, 47rem);
+    justify-content: center;
     padding-top: 9rem;
     background-color: var(--blue);
     padding-bottom: 4rem;
@@ -548,55 +559,75 @@ img, picture {
       margin-bottom: 2rem;
       display: block; }
     .main-footer .footer-form .heading-2 {
-      margin-bottom: 3.5rem; }
+      margin-bottom: 3.5rem;
+      text-align: center; }
     .main-footer .footer-form .heading-2, .main-footer .footer-form .heading-6 {
       color: var(--color-white); }
-    .main-footer .footer-form form .input-email-container {
-      position: relative;
-      border-radius: 5px;
-      overflow: hidden; }
-      .main-footer .footer-form form .input-email-container .email-input {
-        outline: none;
-        border: none;
-        padding: 1.5rem 2rem;
-        border: 2px solid transparent;
-        z-index: 2;
-        border-radius: 5px;
+    .main-footer .footer-form .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: start;
+      justify-self: stretch; }
+      .main-footer .footer-form .contact-form .input-email-container {
         position: relative;
-        width: 100%; }
-      .main-footer .footer-form form .input-email-container .email-error-message {
-        align-items: center;
-        display: none;
-        z-index: 2;
-        height: 3.5rem;
-        font-style: italic;
-        font-weight: 500;
-        color: var(--color-white);
-        padding-left: 1rem;
-        font-size: 1.25rem;
-        position: relative; }
-      .main-footer .footer-form form .input-email-container .auxiliar-background {
-        position: absolute;
-        inset: 0;
-        background-color: var(--light-red);
-        display: none; }
-      .main-footer .footer-form form .input-email-container .icon-invalid-mail {
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        z-index: 3;
-        display: none; }
-      .main-footer .footer-form form .input-email-container .email-input::placeholder {
-        opacity: 0.25;
-        color: rgb(var(--dark-blue)); }
-      .main-footer .footer-form form .input-email-container .email-input:invalid {
-        border: 2px solid var(--light-red); }
-      .main-footer .footer-form form .input-email-container .email-input:invalid ~ .email-error-message {
-        display: flex; }
-      .main-footer .footer-form form .input-email-container .email-input:invalid ~ .auxiliar-background, .main-footer .footer-form form .input-email-container .email-input:invalid ~ .icon-invalid-mail {
-        display: block; }
-  @media only screen and (min-width: 44rem) {
+        border-radius: 5px;
+        overflow: hidden;
+        flex-grow: 1; }
+        .main-footer .footer-form .contact-form .input-email-container .email-input {
+          outline: none;
+          padding: 0 2rem;
+          border: 2px solid transparent;
+          z-index: 2;
+          border-radius: 5px;
+          position: relative;
+          width: 100%; }
+        .main-footer .footer-form .contact-form .input-email-container .email-error-message {
+          align-items: center;
+          display: none;
+          z-index: 2;
+          height: 3.5rem;
+          font-style: italic;
+          font-weight: 500;
+          color: var(--color-white);
+          padding-left: 1rem;
+          font-size: 1.25rem;
+          position: relative; }
+        .main-footer .footer-form .contact-form .input-email-container .auxiliar-background {
+          position: absolute;
+          inset: 0;
+          background-color: var(--light-red);
+          display: none; }
+        .main-footer .footer-form .contact-form .input-email-container .icon-invalid-mail {
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+          z-index: 3;
+          display: none; }
+        .main-footer .footer-form .contact-form .input-email-container .email-input::placeholder {
+          opacity: 0.25;
+          color: rgb(var(--dark-blue));
+          font-size: 1.75rem; }
+        .main-footer .footer-form .contact-form .input-email-container .email-input:invalid {
+          border: 2px solid var(--light-red); }
+        .main-footer .footer-form .contact-form .input-email-container .email-input:invalid ~ .email-error-message {
+          display: flex; }
+        .main-footer .footer-form .contact-form .input-email-container .email-input:invalid ~ .auxiliar-background, .main-footer .footer-form .contact-form .input-email-container .email-input:invalid ~ .icon-invalid-mail {
+          display: block; }
+      .main-footer .footer-form .contact-form .button {
+        display: block;
+        flex-grow: 1;
+        padding-top: 0;
+        padding-bottom: 0; }
+      .main-footer .footer-form .contact-form .button, .main-footer .footer-form .contact-form .input-email-container .email-input {
+        min-height: 6rem; }
+  @media only screen and (min-width: 90em) {
     .main-footer {
-      padding-top: 7rem; } }
+      padding-top: 7rem; }
+      .main-footer .footer-form .contact-form .input-email-container .email-input::placeholder {
+        font-size: 1.4rem; }
+      .main-footer .footer-form .contact-form .button, .main-footer .footer-form .contact-form .input-email-container .email-input {
+        min-height: 4.8rem; } }
 
 /*# sourceMappingURL=style.css.map */
