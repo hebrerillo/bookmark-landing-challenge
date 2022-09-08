@@ -540,26 +540,60 @@ img, picture {
   padding-top: 8rem; }
   .main-footer .footer-form {
     padding-top: 9rem;
-    background-color: var(--blue); }
+    background-color: var(--blue);
+    padding-bottom: 4rem;
+    padding-left: var(--horizontal-padding-container, 2rem);
+    padding-right: var(--horizontal-padding-container, 2rem); }
     .main-footer .footer-form .heading-6 {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      display: block; }
     .main-footer .footer-form .heading-2 {
       margin-bottom: 3.5rem; }
     .main-footer .footer-form .heading-2, .main-footer .footer-form .heading-6 {
       color: var(--color-white); }
-    .main-footer .footer-form form {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .main-footer .footer-form form .email-input {
+    .main-footer .footer-form form .input-email-container {
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden; }
+      .main-footer .footer-form form .input-email-container .email-input {
         outline: none;
         border: none;
-        padding: 1rem;
-        border-radius: 5px; }
-      .main-footer .footer-form form .email-input::placeholder {
+        padding: 1.5rem 2rem;
+        border: 2px solid transparent;
+        z-index: 2;
+        border-radius: 5px;
+        position: relative;
+        width: 100%; }
+      .main-footer .footer-form form .input-email-container .email-error-message {
+        align-items: center;
+        display: none;
+        z-index: 2;
+        height: 3.5rem;
+        font-style: italic;
+        font-weight: 500;
+        color: var(--color-white);
+        padding-left: 1rem;
+        font-size: 1.25rem;
+        position: relative; }
+      .main-footer .footer-form form .input-email-container .auxiliar-background {
+        position: absolute;
+        inset: 0;
+        background-color: var(--light-red);
+        display: none; }
+      .main-footer .footer-form form .input-email-container .icon-invalid-mail {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 3;
+        display: none; }
+      .main-footer .footer-form form .input-email-container .email-input::placeholder {
         opacity: 0.25;
         color: rgb(var(--dark-blue)); }
-      .main-footer .footer-form form .button {
+      .main-footer .footer-form form .input-email-container .email-input:invalid {
+        border: 2px solid var(--light-red); }
+      .main-footer .footer-form form .input-email-container .email-input:invalid ~ .email-error-message {
+        display: flex; }
+      .main-footer .footer-form form .input-email-container .email-input:invalid ~ .auxiliar-background, .main-footer .footer-form form .input-email-container .email-input:invalid ~ .icon-invalid-mail {
         display: block; }
   @media only screen and (min-width: 44rem) {
     .main-footer {
