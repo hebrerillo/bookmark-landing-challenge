@@ -96,6 +96,14 @@ img, picture {
   background-color: var(--color-white);
   color: rgba(var(--dark-blue), 0.75); }
 
+.button--red {
+  background-color: var(--light-red);
+  color: var(--color-white); }
+
+.button--red:hover {
+  background-color: var(--color-white);
+  color: var(--light-red); }
+
 @media only screen and (min-width: 90em) {
   .button {
     font-size: 1.4rem; } }
@@ -127,6 +135,14 @@ img, picture {
   letter-spacing: 0.35px;
   font-weight: 400; }
 
+.heading-6 {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  text-transform: uppercase; }
+
 .default-paragraph {
   opacity: 0.5;
   max-width: var(--paragraph-maximum-width);
@@ -155,7 +171,10 @@ img, picture {
     letter-spacing: -0.1px; }
 
   .heading-5 {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+
+  .heading-6 {
+    font-size: 1.3rem; } }
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -516,5 +535,30 @@ img, picture {
       padding-right: 0; }
       .section-faq .faq-text {
         margin-bottom: 5rem; } }
+
+.main-footer {
+  padding-top: 8rem; }
+  .main-footer .footer-form {
+    padding-top: 9rem;
+    background-color: var(--blue); }
+    .main-footer .footer-form .heading-6 {
+      margin-bottom: 2rem; }
+    .main-footer .footer-form .heading-2 {
+      margin-bottom: 3.5rem; }
+    .main-footer .footer-form .heading-2, .main-footer .footer-form .heading-6 {
+      color: var(--color-white); }
+    .main-footer .footer-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-footer .footer-form form input[type="email"] {
+        outline: none;
+        border: none;
+        padding: 1rem; }
+      .main-footer .footer-form form .button {
+        display: block; }
+  @media only screen and (min-width: 44rem) {
+    .main-footer {
+      padding-top: 7rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+.main-footer {
+    padding-top: 8rem;
+    .footer-form {
+        padding-top: 9rem;
+        background-color: var(--blue);
+
+        .heading-6 {
+            margin-bottom: 2rem;
+        }
+        
+        .heading-2 {
+            margin-bottom: 3.5rem;
+        }
+
+        .heading-2, .heading-6 {
+            color: var(--color-white);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input[type="email"] {
+                outline: none;
+                border: none;
+                padding: 1rem;
+            }
+
+            .button {
+                display: block;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+        padding-top: 7rem;
+    }
+
+}

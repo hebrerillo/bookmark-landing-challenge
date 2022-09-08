@@ -32,6 +32,15 @@
     font-weight: 400;
 }
 
+.heading-6 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
 .default-paragraph {
     opacity: 0.5;
     max-width: var(--paragraph-maximum-width);
@@ -71,5 +80,9 @@
 
     .heading-5 {
         font-size: 1.6rem;
+    }
+
+    .heading-6 {
+        font-size: 1.3rem;
     }
 }

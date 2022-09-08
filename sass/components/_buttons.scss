@@ -31,6 +31,16 @@
     color: rgba(var(--dark-blue), 0.75);
 }
 
+.button--red {
+    background-color: var(--light-red);
+    color: var(--color-white);
+}
+
+.button--red:hover {
+    background-color: var(--color-white);
+    color: var(--light-red);
+}
+
 @media only screen and (min-width: $minWidthDesktop) {
     .button {
         font-size: 1.4rem;
