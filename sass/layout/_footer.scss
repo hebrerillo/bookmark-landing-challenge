@@ -1,5 +1,7 @@
 .main-footer {
     padding-top: 8rem;
+    display: grid;
+    grid-template-columns: minmax(0, var(--max-width-container));
 
     .footer-form {
         display: grid;
@@ -105,6 +107,39 @@
 
             .button, .input-email-container .email-input {
                 min-height: 6rem;
+            }
+        }
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+        background-color: rgb(var(--dark-blue));
+        color: var(--color-white);
+        row-gap: 6rem;
+
+        .header--logo {
+            path {
+                fill: #ffffff;
+            }
+        }
+
+        nav {
+            display: flex;
+            row-gap: 6rem;
+            flex-direction: column;
+            ul {
+                display: flex;
+                row-gap: 4rem;
+                flex-direction: column;
+                li {
+                    a {
+                        text-transform: uppercase;
+                        font-size: 1.8rem;
+                    }
+                }
             }
         }
     }

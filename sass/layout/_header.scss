@@ -66,12 +66,6 @@
                 }
             }
         }
-
-        .header-social-networks {
-            display: flex;
-            justify-content: center;
-            column-gap: 4rem;
-        }
     }
 
     #header-checkbox-buttons:checked ~ .header--logo {
@@ -155,7 +149,7 @@
         }
     }
 
-    @media only screen and (min-width: $minWidthDesktop) { 
+    @media only screen and (min-width: $minWidthDesktop) {
         .navigation-menu--header {
             padding: 0;
         }

@@ -1,0 +1,12 @@
+.header-social-networks {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+
+    svg:hover {
+        cursor: pointer;
+        path {
+            fill: var(--light-red);
+        }
+    }
+}

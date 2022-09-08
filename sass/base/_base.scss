@@ -6,6 +6,7 @@
     --box-shadow-buttons: 0 2px 7px 0px rgba(0, 0, 0, 0.2);
     --box-shadow-buttons-hover: 0 0 0 2px inset;
     --default-transition-time: 0.3s;
+    --max-width-container: 144rem; /* The maximum width of a container in the whole site.*/
     /* Colors */
     --dark-blue : 36, 42, 69;
     --blue: #5267DF;
@@ -89,7 +90,7 @@ button {
     }
 
     .main-content {
-        max-width: 144rem;
+        max-width: var(--max-width-container);
         margin: 0 auto;
     }
 }
