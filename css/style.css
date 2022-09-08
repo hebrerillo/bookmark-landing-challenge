@@ -551,10 +551,14 @@ img, picture {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .main-footer .footer-form form input[type="email"] {
+      .main-footer .footer-form form .email-input {
         outline: none;
         border: none;
-        padding: 1rem; }
+        padding: 1rem;
+        border-radius: 5px; }
+      .main-footer .footer-form form .email-input::placeholder {
+        opacity: 0.25;
+        color: rgb(var(--dark-blue)); }
       .main-footer .footer-form form .button {
         display: block; }
   @media only screen and (min-width: 44rem) {

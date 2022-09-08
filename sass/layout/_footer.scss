@@ -21,10 +21,16 @@
             flex-direction: column;
             align-items: center;
 
-            input[type="email"] {
+            .email-input {
                 outline: none;
                 border: none;
                 padding: 1rem;
+                border-radius: 5px;
+            }
+            
+            .email-input::placeholder {
+                opacity: 0.25;
+                color: rgb(var(--dark-blue));
             }
 
             .button {
