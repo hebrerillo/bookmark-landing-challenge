@@ -4,11 +4,12 @@
     .features-description, #features-tabs, .feature-text {
         padding-left: var(--horizontal-padding-container, 2rem);
         padding-right: var(--horizontal-padding-container, 2rem);
+        text-align: center;
     }
 
     .features-description {
         .default-paragraph {
-            margin-bottom: 4rem;
+            margin: 0 auto 4rem auto;
         }
     }
 
@@ -84,7 +85,7 @@
         display: block;
     }
 
-    @media only screen and (min-width: $minWidthTabletPortrait) {
+    @media only screen and (min-width: $minWidthTabletLandscape) {
         display: flex;
         flex-direction: column;
         align-items: center;
