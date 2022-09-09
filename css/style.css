@@ -30,7 +30,6 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   color: rgb(var(--dark-blue));
-  font-size: 1.8rem;
   text-align: center; }
 
 ul {
@@ -162,10 +161,16 @@ button {
   color: var(--color-white);
   text-transform: uppercase; }
 
+.subheading-1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4; }
+
 .default-paragraph {
   opacity: 0.5;
   max-width: var(--paragraph-maximum-width);
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-size: 1.8rem; }
 
 .default-link {
   color: var(--dark-blue); }
