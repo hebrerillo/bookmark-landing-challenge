@@ -1,6 +1,7 @@
 :root {
     --paragraph-maximum-width: 75rem;
     --horizontal-padding-container: 4rem;
+    --vertical-padding-container: 5rem;
     --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
     --thin-grey-border-2: 1px solid rgba(73, 93, 207, 0.2);
     --box-shadow-buttons: 0 2px 7px 0px rgba(0, 0, 0, 0.2);
@@ -58,7 +59,7 @@ button {
 .main-container {
     min-height: 100vh;
     position: relative;
-    padding-top: 5rem;
+    padding-top: var(--vertical-padding-container);
     margin: 0 auto;
 }
 
@@ -70,10 +71,6 @@ button {
 @media only screen and (min-width: $minWidthTabletPortrait) {
     body {
         text-align: left;
-    }
-
-    .main-container {
-        padding-top: 4.8rem;
     }
 }
 

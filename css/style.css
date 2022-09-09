@@ -1,6 +1,7 @@
 :root {
   --paragraph-maximum-width: 75rem;
   --horizontal-padding-container: 4rem;
+  --vertical-padding-container: 5rem;
   --thin-grey-border: 1px solid rgba(255, 255, 255, 0.15);
   --thin-grey-border-2: 1px solid rgba(73, 93, 207, 0.2);
   --box-shadow-buttons: 0 2px 7px 0px rgba(0, 0, 0, 0.2);
@@ -52,7 +53,7 @@ button {
 .main-container {
   min-height: 100vh;
   position: relative;
-  padding-top: 5rem;
+  padding-top: var(--vertical-padding-container);
   margin: 0 auto; }
 
 .main-header {
@@ -61,10 +62,7 @@ button {
 
 @media only screen and (min-width: 44rem) {
   body {
-    text-align: left; }
-
-  .main-container {
-    padding-top: 4.8rem; } }
+    text-align: left; } }
 @media only screen and (min-width: 90em) {
   :root {
     --paragraph-maximum-width: 80rem;
@@ -204,26 +202,32 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 3.4rem; }
-  .main-header .header--logo, .main-header label {
-    z-index: 4; }
   .main-header #header-checkbox-buttons {
     display: none; }
   .main-header label {
     cursor: pointer; }
-    .main-header label .close-menu-icon {
-      display: none; }
   .main-header .navigation-menu--header {
     display: none;
     flex-direction: column;
     justify-content: space-between;
     z-index: 3;
-    position: absolute;
+    position: fixed;
     inset: 0;
     min-height: 100%;
-    padding-top: 13rem;
+    padding-top: var(--vertical-padding-container, 5rem);
+    padding-bottom: var(--vertical-padding-container, 5rem);
     padding-left: var(--horizontal-padding-container, 2rem);
-    padding-right: var(--horizontal-padding-container, 2rem);
-    padding-bottom: 5rem; }
+    padding-right: var(--horizontal-padding-container, 2rem); }
+    .main-header .navigation-menu--header .header-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 3.4rem;
+      margin-bottom: 5rem; }
+      .main-header .navigation-menu--header .header-navigation .logo path {
+        fill: #ffffff; }
+      .main-header .navigation-menu--header .header-navigation .logo circle {
+        fill: #000000; }
     .main-header .navigation-menu--header::before {
       content: "";
       position: absolute;
@@ -233,7 +237,8 @@ button {
       z-index: -1; }
     .main-header .navigation-menu--header ul {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 4rem; }
       .main-header .navigation-menu--header ul li {
         padding: 3rem 0;
         border-top: var(--thin-grey-border);
@@ -249,14 +254,8 @@ button {
         border-radius: 5px; }
         .main-header .navigation-menu--header ul li:last-child a {
           font-weight: 500; }
-  .main-header #header-checkbox-buttons:checked ~ .header--logo path {
-    fill: #ffffff; }
-  .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
-    fill: #000000; }
-  .main-header #header-checkbox-buttons:checked ~ label .close-menu-icon {
-    display: block; }
-  .main-header #header-checkbox-buttons:checked ~ label .open-menu-icon {
-    display: none; }
+    .main-header .navigation-menu--header .header-social-networks {
+      margin-top: auto; }
   .main-header #header-checkbox-buttons:checked ~ .navigation-menu--header {
     display: flex; }
   @media only screen and (min-width: 44rem) {
@@ -271,12 +270,13 @@ button {
         min-height: auto;
         padding-top: 0;
         padding-bottom: 0; }
-        .main-header .navigation-menu--header .header-social-networks, .main-header .navigation-menu--header::before {
+        .main-header .navigation-menu--header .header-social-networks, .main-header .navigation-menu--header::before, .main-header .navigation-menu--header .header-navigation {
           display: none; }
         .main-header .navigation-menu--header ul {
           flex-direction: row;
           column-gap: 4.5rem;
-          align-items: center; }
+          align-items: center;
+          margin-bottom: 0; }
           .main-header .navigation-menu--header ul li {
             padding: 0;
             border: none; }
@@ -291,11 +291,7 @@ button {
           .main-header .navigation-menu--header ul li:last-child:hover {
             background-color: #fff; }
             .main-header .navigation-menu--header ul li:last-child:hover .heading-4 {
-              color: var(--light-red); }
-      .main-header #header-checkbox-buttons:checked ~ .header--logo path {
-        fill: #242A45; }
-      .main-header #header-checkbox-buttons:checked ~ .header--logo circle {
-        fill: #5267DF; } }
+              color: var(--light-red); } }
   @media only screen and (min-width: 90em) {
     .main-header .navigation-menu--header {
       padding: 0; } }
@@ -650,7 +646,7 @@ button {
       align-items: center;
       row-gap: 6rem;
       color: var(--color-white); }
-      .main-footer .footer-nav .main-content .header--logo path {
+      .main-footer .footer-nav .main-content .logo path {
         fill: #ffffff; }
       .main-footer .footer-nav .main-content nav {
         display: flex;
