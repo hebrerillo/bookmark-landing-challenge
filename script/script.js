@@ -5,20 +5,22 @@
 
     /**** SHOW AND HIDE THE NAVIGATION MENU ON MOBILE ****/
     const navigationMenuHeader = document.querySelector('.navigation-menu--header');
+    const mainHeader = document.querySelector('.main-header');
+
     document.querySelector('.open-menu-icon').addEventListener('click', function(){
         navigationMenuHeader.style.transition = 'none';
         navigationMenuHeader.style.display = 'flex';
         navigationMenuHeader.style.transition = '';
         navigationMenuHeader.offsetHeight;
-        navigationMenuHeader.classList.add('navigation-menu--header--show');
+        mainHeader.classList.add('navigation-menu--header--show');
     });
 
     document.querySelector('.close-menu-icon').addEventListener('click', function(){
-        navigationMenuHeader.classList.remove('navigation-menu--header--show');
+        mainHeader.classList.remove('navigation-menu--header--show');
     });
     
     navigationMenuHeader.addEventListener('transitionend', function(){
-        if (!this.classList.contains('navigation-menu--header--show'))
+        if (!mainHeader.classList.contains('navigation-menu--header--show'))
         {
             this.style.display = 'none';
         }

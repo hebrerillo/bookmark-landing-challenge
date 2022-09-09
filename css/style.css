@@ -256,8 +256,6 @@ button {
           font-weight: 500; }
     .main-header .navigation-menu--header .header-social-networks {
       margin-top: auto; }
-  .main-header .navigation-menu--header--show {
-    opacity: 1; }
   @media only screen and (min-width: 44rem) {
     .main-header {
       height: 4.6rem; }
@@ -265,6 +263,7 @@ button {
         display: none; }
       .main-header .navigation-menu--header {
         display: block;
+        opacity: 1;
         position: static;
         z-index: auto;
         min-height: auto;
@@ -295,6 +294,11 @@ button {
   @media only screen and (min-width: 90em) {
     .main-header .navigation-menu--header {
       padding: 0; } }
+
+.navigation-menu--header--show label .open-menu-icon {
+  display: none; }
+.navigation-menu--header--show .navigation-menu--header {
+  opacity: 1; }
 
 .hero-section {
   padding-top: 9.2rem;
