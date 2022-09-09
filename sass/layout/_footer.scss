@@ -1,7 +1,5 @@
 .main-footer {
     padding-top: 8rem;
-    display: grid;
-    grid-template-columns: minmax(0, var(--max-width-container));
 
     .footer-form {
         display: grid;
@@ -112,32 +110,70 @@
     }
 
     .footer-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding: 5rem 0;
         background-color: rgb(var(--dark-blue));
-        color: var(--color-white);
-        row-gap: 6rem;
+        padding-left: var(--horizontal-padding-container, 2rem);
+        padding-right: var(--horizontal-padding-container, 2rem);
 
-        .header--logo {
-            path {
-                fill: #ffffff;
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 6rem;
+            color: var(--color-white);
+
+            .header--logo {
+                path {
+                    fill: #ffffff;
+                }
+            }
+
+            nav {
+                display: flex;
+                row-gap: 6rem;
+                flex-direction: column;
+                ul {
+                    display: flex;
+                    row-gap: 4rem;
+                    flex-direction: column;
+                    align-items: center;
+                    li {
+                        a {
+                            text-transform: uppercase;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+
+        .footer-form {
+            .contact-form {
+                .button {
+                    flex-grow: 0;
+                }
             }
         }
 
-        nav {
-            display: flex;
-            row-gap: 6rem;
-            flex-direction: column;
-            ul {
-                display: flex;
-                row-gap: 4rem;
-                flex-direction: column;
-                li {
-                    a {
-                        text-transform: uppercase;
-                        font-size: 1.8rem;
+        .footer-nav {
+            .main-content {
+                flex-direction: row;
+                row-gap: 0;
+                column-gap: 8rem;
+
+                nav {
+                    flex-direction: row;
+                    row-gap: 0;
+                    justify-content: space-between;
+                    flex-grow: 1;
+
+                    ul {
+                        flex-direction: row;
+                        row-gap: 0;
+                        column-gap: 3rem;
                     }
                 }
             }

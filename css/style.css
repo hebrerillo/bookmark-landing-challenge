@@ -119,6 +119,7 @@ button {
 .header-social-networks {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 4rem; }
   .header-social-networks svg:hover {
     cursor: pointer; }
@@ -551,9 +552,7 @@ button {
         margin-bottom: 5rem; } }
 
 .main-footer {
-  padding-top: 8rem;
-  display: grid;
-  grid-template-columns: minmax(0, var(--max-width-container)); }
+  padding-top: 8rem; }
   .main-footer .footer-form {
     display: grid;
     justify-items: center;
@@ -632,26 +631,46 @@ button {
       .main-footer .footer-form .contact-form .button, .main-footer .footer-form .contact-form .input-email-container .email-input {
         min-height: 6rem; }
   .main-footer .footer-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 5rem 0;
     background-color: rgb(var(--dark-blue));
-    color: var(--color-white);
-    row-gap: 6rem; }
-    .main-footer .footer-nav .header--logo path {
-      fill: #ffffff; }
-    .main-footer .footer-nav nav {
+    padding-left: var(--horizontal-padding-container, 2rem);
+    padding-right: var(--horizontal-padding-container, 2rem); }
+    .main-footer .footer-nav .main-content {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       row-gap: 6rem;
-      flex-direction: column; }
-      .main-footer .footer-nav nav ul {
+      color: var(--color-white); }
+      .main-footer .footer-nav .main-content .header--logo path {
+        fill: #ffffff; }
+      .main-footer .footer-nav .main-content nav {
         display: flex;
-        row-gap: 4rem;
+        row-gap: 6rem;
         flex-direction: column; }
-        .main-footer .footer-nav nav ul li a {
-          text-transform: uppercase;
-          font-size: 1.8rem; }
+        .main-footer .footer-nav .main-content nav ul {
+          display: flex;
+          row-gap: 4rem;
+          flex-direction: column;
+          align-items: center; }
+          .main-footer .footer-nav .main-content nav ul li a {
+            text-transform: uppercase;
+            font-size: 1.8rem; }
+  @media only screen and (min-width: 44rem) {
+    .main-footer .footer-form .contact-form .button {
+      flex-grow: 0; }
+    .main-footer .footer-nav .main-content {
+      flex-direction: row;
+      row-gap: 0;
+      column-gap: 8rem; }
+      .main-footer .footer-nav .main-content nav {
+        flex-direction: row;
+        row-gap: 0;
+        justify-content: space-between;
+        flex-grow: 1; }
+        .main-footer .footer-nav .main-content nav ul {
+          flex-direction: row;
+          row-gap: 0;
+          column-gap: 3rem; } }
   @media only screen and (min-width: 90em) {
     .main-footer {
       padding-top: 7rem; }
