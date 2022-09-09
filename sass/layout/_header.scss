@@ -52,6 +52,7 @@
 
                 .heading-4 {
                     text-transform: uppercase;
+                    color: var(--color-white);
                 }
             }
 
@@ -119,6 +120,9 @@
                 li {
                     padding: 0;
                     border: none;
+                    .heading-4 {
+                        color: var(--dark-blue);
+                    }
                 }
 
                 li:last-child {

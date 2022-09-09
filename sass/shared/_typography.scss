@@ -52,7 +52,7 @@
 }
 
 .default-link:hover {
-    color: var(--light-red);
+    color: var(--light-red) !important;
 }
 
 @media only screen and (min-width: $minWidthTabletPortrait) {
