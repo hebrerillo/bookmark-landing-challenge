@@ -627,12 +627,12 @@ button {
           opacity: 0.25;
           color: rgb(var(--dark-blue));
           font-size: 1.75rem; }
-        .main-footer .footer-form .contact-form .input-email-container .email-input:invalid {
-          border: 2px solid var(--light-red); }
-        .main-footer .footer-form .contact-form .input-email-container .email-input:invalid ~ .email-error-message {
-          display: flex; }
-        .main-footer .footer-form .contact-form .input-email-container .email-input:invalid ~ .auxiliar-background, .main-footer .footer-form .contact-form .input-email-container .email-input:invalid ~ .icon-invalid-mail {
-          display: block; }
+      .main-footer .footer-form .contact-form .invalid-mail .email-input {
+        border: 2px solid var(--light-red); }
+      .main-footer .footer-form .contact-form .invalid-mail .email-error-message {
+        display: flex; }
+      .main-footer .footer-form .contact-form .invalid-mail .auxiliar-background, .main-footer .footer-form .contact-form .invalid-mail .icon-invalid-mail {
+        display: block; }
       .main-footer .footer-form .contact-form .button {
         display: block;
         flex-grow: 1;
