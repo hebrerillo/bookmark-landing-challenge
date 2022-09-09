@@ -379,7 +379,8 @@ button {
         background-color: var(--light-red);
         display: block;
         left: 50%;
-        transform: translateX(-50%); }
+        transform: translateX(-50%);
+        pointer-events: none; }
     .features-section ul li:last-child {
       border-bottom: var(--thin-grey-border-2); }
   .features-section .feature {
