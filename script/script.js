@@ -3,6 +3,27 @@
 (function ()
 {
 
+    /**** SHOW AND HIDE THE NAVIGATION MENU ON MOBILE ****/
+    const navigationMenuHeader = document.querySelector('.navigation-menu--header');
+    document.querySelector('.open-menu-icon').addEventListener('click', function(){
+        navigationMenuHeader.style.transition = 'none';
+        navigationMenuHeader.style.display = 'flex';
+        navigationMenuHeader.style.transition = '';
+        navigationMenuHeader.offsetHeight;
+        navigationMenuHeader.classList.add('navigation-menu--header--show');
+    });
+
+    document.querySelector('.close-menu-icon').addEventListener('click', function(){
+        navigationMenuHeader.classList.remove('navigation-menu--header--show');
+    });
+    
+    navigationMenuHeader.addEventListener('transitionend', function(){
+        if (!this.classList.contains('navigation-menu--header--show'))
+        {
+            this.style.display = 'none';
+        }
+    });
+    
     /********* SHOWING AND HIDING FEATURED TABS ***********/
     const tabsContainer = document.querySelector('#features-tabs');
     const featuresContainer = document.querySelector('.features-container');
