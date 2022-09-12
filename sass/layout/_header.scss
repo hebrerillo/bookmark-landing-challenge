@@ -15,8 +15,11 @@
         justify-content: space-between;
         z-index: 3;
         position: fixed;
-        inset: 0;
-        min-height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
         padding-top: var(--vertical-padding-container, 5rem);
         padding-bottom: var(--vertical-padding-container, 5rem);
         padding-left: var(--horizontal-padding-container, 2rem);
@@ -29,7 +32,7 @@
             justify-content: space-between;
             align-items: center;
             height: 3.4rem;
-            margin-bottom: 5rem;
+            margin-bottom: 6rem;
 
             .logo {
                 path {
@@ -87,11 +90,13 @@
             opacity: 1;
             position: static;
             z-index: auto;
-            min-height: auto;
+            height: auto;
+            width: auto;
             padding-top: 0;
             padding-bottom: 0;
+            background-color: transparent;
 
-            .header-social-networks, &::before, .header-navigation {
+            .header-social-networks, .header-navigation {
                 display: none;
             }
 

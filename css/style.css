@@ -211,8 +211,11 @@ button {
     justify-content: space-between;
     z-index: 3;
     position: fixed;
-    inset: 0;
-    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
     padding-top: var(--vertical-padding-container, 5rem);
     padding-bottom: var(--vertical-padding-container, 5rem);
     padding-left: var(--horizontal-padding-container, 2rem);
@@ -224,7 +227,7 @@ button {
       justify-content: space-between;
       align-items: center;
       height: 3.4rem;
-      margin-bottom: 5rem; }
+      margin-bottom: 6rem; }
       .main-header .navigation-menu--header .header-navigation .logo path {
         fill: #ffffff; }
       .main-header .navigation-menu--header .header-navigation .logo circle {
@@ -260,10 +263,12 @@ button {
         opacity: 1;
         position: static;
         z-index: auto;
-        min-height: auto;
+        height: auto;
+        width: auto;
         padding-top: 0;
-        padding-bottom: 0; }
-        .main-header .navigation-menu--header .header-social-networks, .main-header .navigation-menu--header::before, .main-header .navigation-menu--header .header-navigation {
+        padding-bottom: 0;
+        background-color: transparent; }
+        .main-header .navigation-menu--header .header-social-networks, .main-header .navigation-menu--header .header-navigation {
           display: none; }
         .main-header .navigation-menu--header ul {
           flex-direction: row;
