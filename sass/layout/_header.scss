@@ -21,6 +21,7 @@
         padding-bottom: var(--vertical-padding-container, 5rem);
         padding-left: var(--horizontal-padding-container, 2rem);
         padding-right: var(--horizontal-padding-container, 2rem);
+        background-color: rgba(var(--dark-blue), 0.9);
         transition: all var(--default-transition-time);
 
         .header-navigation {
@@ -39,15 +40,6 @@
                     fill : #000000;
                 }
             }
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-color: rgb(var(--dark-blue));
-            opacity: 0.95;
-            z-index: -1;
         }
 
         ul {

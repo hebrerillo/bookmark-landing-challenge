@@ -217,6 +217,7 @@ button {
     padding-bottom: var(--vertical-padding-container, 5rem);
     padding-left: var(--horizontal-padding-container, 2rem);
     padding-right: var(--horizontal-padding-container, 2rem);
+    background-color: rgba(var(--dark-blue), 0.9);
     transition: all var(--default-transition-time); }
     .main-header .navigation-menu--header .header-navigation {
       display: flex;
@@ -228,13 +229,6 @@ button {
         fill: #ffffff; }
       .main-header .navigation-menu--header .header-navigation .logo circle {
         fill: #000000; }
-    .main-header .navigation-menu--header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: rgb(var(--dark-blue));
-      opacity: 0.95;
-      z-index: -1; }
     .main-header .navigation-menu--header ul {
       display: flex;
       flex-direction: column;
