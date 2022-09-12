@@ -253,6 +253,8 @@ button {
           font-weight: 500; }
     .main-header .navigation-menu--header .header-social-networks {
       margin-top: auto; }
+  .main-header .navigation-menu--header--display {
+    display: flex; }
   @media only screen and (min-width: 44rem) {
     .main-header {
       height: 4.6rem; }

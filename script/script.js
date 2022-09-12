@@ -10,7 +10,7 @@
     document.querySelector('.open-menu-icon').addEventListener('click', function ()
     {
         navigationMenuHeader.style.transition = 'none';
-        navigationMenuHeader.style.display = 'flex';
+        navigationMenuHeader.classList.add('navigation-menu--header--display');
         navigationMenuHeader.style.transition = '';
         navigationMenuHeader.offsetHeight;
         mainHeader.classList.add('navigation-menu--header--show');
@@ -25,7 +25,7 @@
     {
         if (!mainHeader.classList.contains('navigation-menu--header--show'))
         {
-            this.style.display = 'none';
+            this.classList.remove('navigation-menu--header--display');
         }
     });
 
