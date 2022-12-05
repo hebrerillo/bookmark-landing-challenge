@@ -539,7 +539,8 @@ button {
       padding-bottom: 2rem; }
       .section-faq ul li .question {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        align-items: center; }
         .section-faq ul li .question svg {
           width: 18px;
           height: 12px; }
