@@ -269,7 +269,8 @@ button {
         width: auto;
         padding-top: 0;
         padding-bottom: 0;
-        background-color: transparent; }
+        background-color: transparent;
+        overflow-y: visible; }
         .main-header .navigation-menu--header .header-social-networks, .main-header .navigation-menu--header .header-navigation {
           display: none; }
         .main-header .navigation-menu--header ul {
